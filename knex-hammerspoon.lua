@@ -2,13 +2,11 @@
 -- Add this to your ~/.hammerspoon/init.lua
 --
 -- KNEX (₭) = main unit (like $)
--- RAW (ℛ)  = smallest unit (like ¢)
--- 1 KNEX = 10,000,000 RAW (10M)
+-- RAW (⋖)  = smallest unit (like ¢)
+-- 1 ₭ = 10,000,000⋖ (10M RAW)
 
-local KNEX_SYMBOL = "\u{E000}"  -- Private Use Area U+E000
-local RAW_SYMBOL = "\u{E001}"   -- Private Use Area U+E001
-local KNEX_FALLBACK = "K"       -- Fallback if font missing
-local RAW_FALLBACK = "r"        -- Fallback if font missing
+local KNEX_SYMBOL = "₭"   -- U+20AD Kip Sign
+local RAW_SYMBOL = "⋖"    -- U+22D6 Less-Than with Dot
 
 -- ═══════════════════════════════════════════════════════════════
 -- METHOD 1: Popup Chooser (for hold-K via Karabiner)
@@ -24,28 +22,28 @@ local knexChoices = {
     },
     {
         ["text"] = "₭ KNEX Symbol",
-        ["subText"] = "Insert KNEX currency symbol (U+E000)",
+        ["subText"] = "Insert KNEX currency symbol (U+20AD)",
         ["symbol"] = KNEX_SYMBOL
     },
     {
-        ["text"] = "ℛ  RAW with space",
-        ["subText"] = "RAW symbol (1 KNEX = 10M RAW)",
+        ["text"] = "⋖  RAW with space",
+        ["subText"] = "RAW symbol (1 ₭ = 10,000,000⋖)",
         ["symbol"] = RAW_SYMBOL .. " "
     },
     {
-        ["text"] = "ℛ RAW Symbol",
-        ["subText"] = "Insert RAW symbol (U+E001)",
+        ["text"] = "⋖ RAW Symbol",
+        ["subText"] = "Insert RAW symbol (U+22D6)",
         ["symbol"] = RAW_SYMBOL
     },
     {
-        ["text"] = "₭12.46 Price format",
+        ["text"] = "₭ 12.46 Price format",
         ["subText"] = "KNEX with price placeholder",
-        ["symbol"] = KNEX_SYMBOL .. "12.46"
+        ["symbol"] = KNEX_SYMBOL .. " 12.46"
     },
     {
-        ["text"] = "ℛ124,600,000 RAW price",
-        ["subText"] = "RAW equivalent of ₭12.46",
-        ["symbol"] = RAW_SYMBOL .. "124,600,000"
+        ["text"] = "124,600,000⋖ RAW price",
+        ["subText"] = "RAW equivalent of ₭ 12.46",
+        ["symbol"] = "124,600,000" .. RAW_SYMBOL
     }
 }
 
@@ -117,18 +115,18 @@ end)
 -- VISUAL FEEDBACK
 -- ═══════════════════════════════════════════════════════════════
 
-hs.alert.show("KnexCoin Keyboard Loaded ₭ ℛ")
+hs.alert.show("KnexCoin Keyboard Loaded ₭ ⋖")
 print("══════════════════════════════════════════════════════")
 print("  KNEXCOIN KEYBOARD MODULE LOADED")
 print("══════════════════════════════════════════════════════")
 print("")
 print("  KNEX (like $):        RAW (like ¢):")
 print("  ─────────────         ─────────────")
-print("  Option+K     → ₭      Option+R     → ℛ ")
-print("  Option+Shift+K → ₭    Option+Shift+R → ℛ")
+print("  Option+K     → ₭      Option+R     → ⋖")
+print("  Option+Shift+K → ₭    Option+Shift+R → ⋖")
 print("  Option+Ctrl+K → copy  Option+Ctrl+R → copy")
 print("")
 print("  Hold K (300ms) → Show symbol chooser")
 print("")
-print("  1 KNEX = 10,000,000 RAW (10M)")
+print("  1 ₭ = 10,000,000⋖ (10M RAW)")
 print("══════════════════════════════════════════════════════")

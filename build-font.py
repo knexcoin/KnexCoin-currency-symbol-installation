@@ -3,9 +3,9 @@
 KnexCoin Font Builder
 Creates a TTF font with:
   - KNEX symbol (₭) at U+E000 (like $)
-  - RAW symbol (ℛ) at U+E001 (like ¢)
+  - RAW symbol (⋖) at U+E001 (like ¢)
 
-1 KNEX = 10,000,000 RAW (10M)
+1 ₭ = 10,000,000⋖ (10M RAW)
 
 Requirements: FontForge (brew install fontforge)
 Usage: fontforge -script build-font.py
@@ -179,15 +179,15 @@ def create_knex_font():
     │ Symbol  │ Codepoint│ Shortcut                    │
     ├─────────┼──────────┼─────────────────────────────┤
     │ KNEX ₭  │ U+E000   │ Option+K (like $)           │
-    │ RAW  ℛ  │ U+E001   │ Option+R (like ¢)           │
+    │ RAW  ⋖  │ U+E001   │ Option+R (like ¢)           │
     └─────────┴──────────┴─────────────────────────────┘
 
     CONVERSION:
-    1 KNEX = 10,000,000 RAW (10M)
+    1 ₭ = 10,000,000⋖ (10M RAW)
 
     USAGE:
     ₭ 12.46        = 12.46 KNEX
-    ℛ 124,600,000  = 124.6M RAW = ₭ 12.46
+    124,600,000⋖   = 124.6M RAW = ₭ 12.46
     """)
     print("="*60)
 

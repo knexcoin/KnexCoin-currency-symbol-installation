@@ -7,8 +7,8 @@ $ErrorActionPreference = "Stop"
 
 Write-Host ""
 Write-Host "+==========================================================+" -ForegroundColor Cyan
-Write-Host "|    K KNEXCOIN CURRENCY SYMBOLS - Windows INSTALLER       |" -ForegroundColor Cyan
-Write-Host "|           Type K (KNEX) and < (RAW) anywhere!            |" -ForegroundColor Cyan
+Write-Host "|    ₭ KNEXCOIN CURRENCY SYMBOLS - Windows INSTALLER       |" -ForegroundColor Cyan
+Write-Host "|           Type ₭ (KNEX) and ⋖ (RAW) anywhere!            |" -ForegroundColor Cyan
 Write-Host "+==========================================================+" -ForegroundColor Cyan
 Write-Host ""
 
@@ -37,37 +37,37 @@ Write-Host "[2/3] Creating AutoHotkey Script..." -ForegroundColor Green
 
 $AhkScript = @'
 ; KNEX Currency Symbol AutoHotkey Script
-; Hotkeys for typing KNEX (K) and RAW (<) symbols
+; Hotkeys for typing ₭ (KNEX) and ⋖ (RAW) symbols
 ;
 ; Shortcuts:
-;   Alt+K        -> K + space (KNEX)
-;   Alt+Shift+K  -> K (no space)
-;   Alt+R        -> < + space (RAW)
-;   Alt+Shift+R  -> < (no space)
+;   Alt+K        -> ₭ + space (KNEX)
+;   Alt+Shift+K  -> ₭ (no space)
+;   Alt+R        -> ⋖ + space (RAW)
+;   Alt+Shift+R  -> ⋖ (no space)
 
 #NoEnv
 #SingleInstance Force
 SendMode Input
 
-; KNEX Symbol
+; KNEX Symbol (₭ U+20AD)
 !k::Send {U+20AD}{Space}
 !+k::Send {U+20AD}
 
-; RAW Symbol
+; RAW Symbol (⋖ U+22D6)
 !r::Send {U+22D6}{Space}
 !+r::Send {U+22D6}
 
 ; Copy to clipboard variants
 ^!k::
     Clipboard := Chr(0x20AD)
-    ToolTip, K copied!
+    ToolTip, ₭ copied!
     Sleep 1000
     ToolTip
     return
 
 ^!r::
     Clipboard := Chr(0x22D6)
-    ToolTip, < copied!
+    ToolTip, ⋖ copied!
     Sleep 1000
     ToolTip
     return
@@ -124,15 +124,15 @@ Write-Host "+==========================================================+" -Foreg
 Write-Host ""
 Write-Host "Keyboard shortcuts:" -ForegroundColor Green
 Write-Host ""
-Write-Host "  KNEX (K):                      RAW (<):"
+Write-Host "  KNEX (₭):                      RAW (⋖):"
 Write-Host "  ---------------------          ---------------------"
-Write-Host "  * Alt+K     -> K + space       * Alt+R     -> < + space"
-Write-Host "  * Alt+Shift+K -> K             * Alt+Shift+R -> <"
+Write-Host "  * Alt+K     -> ₭ + space       * Alt+R     -> ⋖ + space"
+Write-Host "  * Alt+Shift+K -> ₭             * Alt+Shift+R -> ⋖"
 Write-Host "  * Alt+Ctrl+K  -> copy          * Alt+Ctrl+R  -> copy"
 Write-Host ""
-Write-Host "  Currency: 1 K = 10,000,000 < (10M RAW)"
+Write-Host "  Currency: 1 ₭ = 10,000,000⋖ (10M RAW)"
 Write-Host ""
-Write-Host "Happy KNEXing! K <" -ForegroundColor Green
+Write-Host "Happy KNEXing! ₭ ⋖" -ForegroundColor Green
 Write-Host ""
 
 Read-Host "Press Enter to exit"

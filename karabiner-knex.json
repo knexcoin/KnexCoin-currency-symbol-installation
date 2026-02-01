@@ -29,7 +29,7 @@
       ]
     },
     {
-      "description": "Option+K immediately types KNEX symbol (U+E000)",
+      "description": "Option+K immediately types KNEX symbol ₭ (U+20AD)",
       "manipulators": [
         {
           "type": "basic",
@@ -42,7 +42,27 @@
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell application \"System Events\" to keystroke (character id 57344)'"
+              "shell_command": "osascript -e 'tell application \"System Events\" to keystroke (character id 8365)'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Option+R immediately types RAW symbol ⋖ (U+22D6)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "r",
+            "modifiers": {
+              "mandatory": ["option"],
+              "optional": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"System Events\" to keystroke (character id 8918)'"
             }
           ]
         }
