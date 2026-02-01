@@ -167,9 +167,9 @@ KnexCoin has two currency units: **₭ (KNEX)** and **⋖ (RAW)**, similar to do
 <tr>
 <td align="center" width="300">
 
-**₭ KNEX (Banknote)**
+**₭ KNEX (Coin)**
 
-<img src="assets/knex-banknote.svg" alt="KNEX Banknote" width="200"/>
+<img src="assets/knex-coin.svg" alt="KNEX Coin" width="120"/>
 
 The main currency unit.
 Like **$** (dollar).

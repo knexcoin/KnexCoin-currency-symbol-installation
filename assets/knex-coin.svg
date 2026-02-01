@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-label="KNEX Coin - K with left stub">
+  <!-- Black circle -->
+  <circle cx="128" cy="128" r="118" fill="#000000"/>
+
+  <!-- ₭ Symbol - K with left stub -->
+  <g fill="#ffffff">
+    <!-- Stem -->
+    <rect x="108" y="56" width="24" height="144"/>
+    <!-- Left stub -->
+    <rect x="84" y="116" width="24" height="24"/>
+    <!-- Upper-right arm (45°) -->
+    <polygon points="136.485,137.515 182.485,91.515 165.515,74.545 119.515,120.545"/>
+    <!-- Lower-right arm -->
+    <polygon points="119.515,135.455 165.515,181.455 182.485,168.485 136.485,118.485"/>
+  </g>
+</svg>
