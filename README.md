@@ -70,7 +70,7 @@
 ### How to Earn
 
 1. **Install** the currency symbol integration (this repo)
-2. **Register** your wallet at [knexcoin.org/airdrop](https://knexcoin.org/airdrop)
+2. **Register** your wallet at [knexcoin.com/airdrop](https://knexcoin.com/airdrop)
 3. **Receive** ₭ 1,000 installation bonus instantly
 4. **Share** on social media to earn ₭ 1 per verified share (unlimited)
 5. **Refer** friends using your unique link for ₭ 100 per signup
@@ -202,7 +202,7 @@ NTAG 424 DNA (Secure Dynamic Messaging) is NXP's advanced NFC chip featuring cry
 
 ### Get Your Knex Card
 
-Order at [knexcoin.org/card](https://knexcoin.org/card)
+Order at [knexcoin.com/card](https://knexcoin.com/card)
 
 - **Standard Card:** ₭ 5.00 (plastic, white)
 - **Metal Card:** ₭ 25.00 (stainless steel, black)
@@ -806,9 +806,9 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🔗 Links
 
-- **KnexCoin Website:** [https://knexcoin.org](https://knexcoin.org)
+- **KnexCoin Website:** [https://knexcoin.com](https://knexcoin.com)
 - **KnexWallet:** [https://github.com/knexcoin/KnexWallet](https://github.com/knexcoin/KnexWallet)
-- **AyeDEX Exchange:** [https://ayedex.knexcoin.org](https://ayedex.knexcoin.org)
+- **AyeDEX Exchange:** [https://exchange.ayedex.com](https://exchange.ayedex.com)
 
 ---
 
