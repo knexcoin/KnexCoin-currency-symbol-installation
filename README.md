@@ -195,10 +195,10 @@ Like **¢** (cent).
 ║                    EXCHANGE RATE                          ║
 ╠═══════════════════════════════════════════════════════════╣
 ║                                                           ║
-║              1 ₭  =  10,000,000 ⋖                         ║
+║              1 ₭  =  10,000,000⋖                          ║
 ║                      (10 Million RAW)                     ║
 ║                                                           ║
-║              1 ⋖  =  ₭ 0.0000001                          ║
+║              1⋖   =  ₭ 0.0000001                          ║
 ║                      (One Ten-Millionth)                  ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
@@ -213,7 +213,7 @@ Like **¢** (cent).
 ║                                                           ║
 ║  Maximum RAW ever created:                                ║
 ║                                                           ║
-║         ⋖ 2,100,000,000,000,000                           ║
+║         2,100,000,000,000,000⋖                            ║
 ║           (2.1 Quadrillion RAW)                           ║
 ║                                                           ║
 ║  Equivalent in KNEX:                                      ║
@@ -228,17 +228,17 @@ Like **¢** (cent).
 
 | Unit | Amount | Calculation |
 |------|--------|-------------|
-| **Total RAW** | ⋖ 2,100,000,000,000,000 | 2.1 × 10¹⁵ (hard cap) |
+| **Total RAW** | 2,100,000,000,000,000⋖ | 2.1 × 10¹⁵ (hard cap) |
 | **Total KNEX** | ₭ 210,000,000 | 2.1 quadrillion ÷ 10 million |
-| **RAW per KNEX** | ⋖ 10,000,000 | Fixed conversion rate |
+| **RAW per KNEX** | 10,000,000⋖ | Fixed conversion rate |
 
 **Supply Breakdown:**
 
 | Metric | Value |
 |--------|-------|
 | Maximum KNEX | ₭ 210,000,000 |
-| Maximum RAW | ⋖ 2,100,000,000,000,000 |
-| Smallest unit | ⋖ 1 (one RAW) |
+| Maximum RAW | 2,100,000,000,000,000⋖ |
+| Smallest unit | 1⋖ (one RAW) |
 | Decimal places | 7 (in KNEX) |
 | Scientific notation | 2.1 × 10¹⁵ RAW |
 
@@ -246,7 +246,7 @@ Like **¢** (cent).
 
 | Cryptocurrency | Max Supply (Main Unit) | Max Supply (Smallest Unit) | Smallest Unit Name |
 |----------------|------------------------|---------------------------|-------------------|
-| **KnexCoin** | ₭ 210,000,000 | ⋖ 2.1 Quadrillion | RAW |
+| **KnexCoin** | ₭ 210,000,000 | 2.1 Quadrillion⋖ | RAW |
 | Bitcoin | 21,000,000 BTC | 2.1 Quadrillion satoshis | Satoshi |
 | Ethereum | No hard cap | No hard cap | Wei |
 | Litecoin | 84,000,000 LTC | 8.4 Quadrillion litoshis | Litoshi |
@@ -268,29 +268,29 @@ Like **¢** (cent).
 
 | KNEX (₭) | RAW (⋖) | Description |
 |----------|---------|-------------|
-| ₭ 1.0000000 | ⋖ 10,000,000 | 1 KNEX = 10 Million RAW |
-| ₭ 0.1000000 | ⋖ 1,000,000 | 1/10 KNEX = 1 Million RAW |
-| ₭ 0.0100000 | ⋖ 100,000 | 1/100 KNEX = 100 Thousand RAW |
-| ₭ 0.0010000 | ⋖ 10,000 | 1/1000 KNEX = 10 Thousand RAW |
-| ₭ 0.0001000 | ⋖ 1,000 | 1/10000 KNEX = 1 Thousand RAW |
-| ₭ 0.0000100 | ⋖ 100 | 1/100000 KNEX = 100 RAW |
-| ₭ 0.0000010 | ⋖ 10 | 1/1000000 KNEX = 10 RAW |
-| **₭ 0.0000001** | **⋖ 1** | **Smallest unit = 1 RAW** |
+| ₭ 1.0000000 | 10,000,000⋖ | 1 KNEX = 10 Million RAW |
+| ₭ 0.1000000 | 1,000,000⋖ | 1/10 KNEX = 1 Million RAW |
+| ₭ 0.0100000 | 100,000⋖ | 1/100 KNEX = 100 Thousand RAW |
+| ₭ 0.0010000 | 10,000⋖ | 1/1000 KNEX = 10 Thousand RAW |
+| ₭ 0.0001000 | 1,000⋖ | 1/10000 KNEX = 1 Thousand RAW |
+| ₭ 0.0000100 | 100⋖ | 1/100000 KNEX = 100 RAW |
+| ₭ 0.0000010 | 10⋖ | 1/1000000 KNEX = 10 RAW |
+| **₭ 0.0000001** | **1⋖** | **Smallest unit = 1 RAW** |
 
 ### RAW to KNEX Conversion (Every Power of 10)
 
 | RAW (⋖) | KNEX (₭) | Common Name |
 |---------|----------|-------------|
-| ⋖ 1 | ₭ 0.0000001 | 1 RAW (smallest unit) |
-| ⋖ 10 | ₭ 0.000001 | 10 RAW |
-| ⋖ 100 | ₭ 0.00001 | 100 RAW |
-| ⋖ 1,000 | ₭ 0.0001 | 1K RAW (1 Thousand) |
-| ⋖ 10,000 | ₭ 0.001 | 10K RAW |
-| ⋖ 100,000 | ₭ 0.01 | 100K RAW |
-| ⋖ 1,000,000 | ₭ 0.1 | 1M RAW (1 Million) |
-| **⋖ 10,000,000** | **₭ 1.0** | **10M RAW = 1 KNEX** |
-| ⋖ 100,000,000 | ₭ 10.0 | 100M RAW |
-| ⋖ 1,000,000,000 | ₭ 100.0 | 1B RAW (1 Billion) |
+| 1⋖ | ₭ 0.0000001 | 1 RAW (smallest unit) |
+| 10⋖ | ₭ 0.000001 | 10 RAW |
+| 100⋖ | ₭ 0.00001 | 100 RAW |
+| 1,000⋖ | ₭ 0.0001 | 1K RAW (1 Thousand) |
+| 10,000⋖ | ₭ 0.001 | 10K RAW |
+| 100,000⋖ | ₭ 0.01 | 100K RAW |
+| 1,000,000⋖ | ₭ 0.1 | 1M RAW (1 Million) |
+| **10,000,000⋖** | **₭ 1.0** | **10M RAW = 1 KNEX** |
+| 100,000,000⋖ | ₭ 10.0 | 100M RAW |
+| 1,000,000,000⋖ | ₭ 100.0 | 1B RAW (1 Billion) |
 
 ### Comparison to Traditional Currencies
 
@@ -300,7 +300,7 @@ Like **¢** (cent).
 | Subunit name | RAW (⋖) | Cent (¢) | Satoshi (sat) |
 | Subunits per main | 10,000,000 | 100 | 100,000,000 |
 | Smallest decimal | ₭ 0.0000001 | $0.01 | 0.00000001 BTC |
-| Written as subunit | ⋖ 1 | ¢1 | 1 sat |
+| Written as subunit | 1⋖ | 1¢ | 1 sat |
 
 ### Real-World Pricing Examples
 
@@ -311,30 +311,30 @@ Like **¢** (cent).
 ║                                                           ║
 ║  LARGE PURCHASES (use KNEX):                              ║
 ║  ─────────────────────────────────────────────────────    ║
-║  House:       ₭ 250,000.00    = ⋖ 2,500,000,000,000,000   ║
-║  Car:         ₭ 35,000.00     = ⋖ 350,000,000,000,000     ║
-║  Computer:    ₭ 1,500.00      = ⋖ 15,000,000,000,000      ║
-║  Phone:       ₭ 999.99        = ⋖ 9,999,900,000,000       ║
+║  House:       ₭ 250,000.00    = 2,500,000,000,000,000⋖    ║
+║  Car:         ₭ 35,000.00     = 350,000,000,000,000⋖      ║
+║  Computer:    ₭ 1,500.00      = 15,000,000,000,000⋖       ║
+║  Phone:       ₭ 999.99        = 9,999,900,000,000⋖        ║
 ║                                                           ║
 ║  EVERYDAY PURCHASES (use KNEX):                           ║
 ║  ─────────────────────────────────────────────────────    ║
-║  Groceries:   ₭ 85.50         = ⋖ 855,000,000             ║
-║  Dinner:      ₭ 45.00         = ⋖ 450,000,000             ║
-║  Coffee:      ₭ 5.50          = ⋖ 55,000,000              ║
-║  Snack:       ₭ 2.25          = ⋖ 22,500,000              ║
+║  Groceries:   ₭ 85.50         = 855,000,000⋖              ║
+║  Dinner:      ₭ 45.00         = 450,000,000⋖              ║
+║  Coffee:      ₭ 5.50          = 55,000,000⋖               ║
+║  Snack:       ₭ 2.25          = 22,500,000⋖               ║
 ║                                                           ║
 ║  MICRO-TRANSACTIONS (use RAW):                            ║
 ║  ─────────────────────────────────────────────────────    ║
-║  API call:    ⋖ 100           = ₭ 0.00001                 ║
-║  Page view:   ⋖ 10            = ₭ 0.000001                ║
-║  Data byte:   ⋖ 1             = ₭ 0.0000001               ║
+║  API call:    100⋖            = ₭ 0.00001                 ║
+║  Page view:   10⋖             = ₭ 0.000001                ║
+║  Data byte:   1⋖              = ₭ 0.0000001               ║
 ║                                                           ║
 ║  TIPS & SMALL AMOUNTS:                                    ║
 ║  ─────────────────────────────────────────────────────    ║
-║  Good tip:    ₭ 0.50          = ⋖ 5,000,000               ║
-║  Small tip:   ₭ 0.10          = ⋖ 1,000,000               ║
-║  Micro tip:   ₭ 0.01          = ⋖ 100,000                 ║
-║  Tiny tip:    ₭ 0.001         = ⋖ 10,000                  ║
+║  Good tip:    ₭ 0.50          = 5,000,000⋖                ║
+║  Small tip:   ₭ 0.10          = 1,000,000⋖                ║
+║  Micro tip:   ₭ 0.01          = 100,000⋖                  ║
+║  Tiny tip:    ₭ 0.001         = 10,000⋖                   ║
 ║                                                           ║
 ╚═══════════════════════════════════════════════════════════╝
 ```
@@ -344,12 +344,12 @@ Like **¢** (cent).
 | Situation | Use | Example |
 |-----------|-----|---------|
 | **Prices over ₭ 0.01** | ₭ KNEX | ₭ 12.50 |
-| **Prices under ₭ 0.01** | ⋖ RAW | ⋖ 50,000 |
+| **Prices under ₭ 0.01** | ⋖ RAW | 50,000⋖ |
 | **Displaying balances** | ₭ KNEX | Balance: ₭ 1,234.56 |
-| **Micro-payments** | ⋖ RAW | Cost: ⋖ 100 per request |
-| **Smart contract fees** | ⋖ RAW | Gas: ⋖ 21,000 |
+| **Micro-payments** | ⋖ RAW | Cost: 100⋖ per request |
+| **Smart contract fees** | ⋖ RAW | Gas: 21,000⋖ |
 | **Human-readable prices** | ₭ KNEX | "That costs 5 KNEX" |
-| **Machine precision** | ⋖ RAW | Transfer 50000000 RAW |
+| **Machine precision** | ⋖ RAW | Transfer 50000000⋖ |
 
 ### Formatting Guidelines
 
@@ -360,12 +360,12 @@ Like **¢** (cent).
 ₭ 0.01        // One hundredth of a KNEX
 
 // Display as RAW when < 0.01
-⋖ 99,999      // Just under 0.01 KNEX
-⋖ 10,000      // 0.001 KNEX
-⋖ 1,000       // 0.0001 KNEX
-⋖ 100         // 0.00001 KNEX
-⋖ 10          // 0.000001 KNEX
-⋖ 1           // Smallest possible amount
+99,999⋖       // Just under 0.01 KNEX
+10,000⋖       // 0.001 KNEX
+1,000⋖        // 0.0001 KNEX
+100⋖          // 0.00001 KNEX
+10⋖           // 0.000001 KNEX
+1⋖            // Smallest possible amount
 ```
 
 ### Quick Mental Math
@@ -375,8 +375,8 @@ To convert KNEX → RAW:  Move decimal 7 places RIGHT (or multiply by 10,000,000
 To convert RAW → KNEX:  Move decimal 7 places LEFT  (or divide by 10,000,000)
 
 Examples:
-  ₭ 1.5     → 15,000,000 ⋖  (move decimal 7 right)
-  ⋖ 500,000 → ₭ 0.05        (move decimal 7 left)
+  ₭ 1.5      → 15,000,000⋖   (move decimal 7 right)
+  500,000⋖   → ₭ 0.05        (move decimal 7 left)
 ```
 
 ---
@@ -764,5 +764,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 </p>
 
 <p align="center">
-  <strong>1 ₭ = 10,000,000 ⋖</strong>
+  <strong>1 ₭ = 10,000,000⋖</strong>
 </p>
