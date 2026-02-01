@@ -1,29 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
-  <!-- Background -->
-  <rect width="600" height="200" fill="#1a1a2e"/>
-
-  <!-- Gradient overlay -->
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#16213e;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#0f3460;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1421"/>
+      <stop offset="50%" stop-color="#162447"/>
+      <stop offset="100%" stop-color="#0d1421"/>
     </linearGradient>
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Banknote pattern -->
+    <pattern id="notePattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#00ff88" opacity="0.1"/>
+    </pattern>
   </defs>
-  <rect width="600" height="200" fill="url(#grad)"/>
 
-  <!-- KNEX Symbol Circle -->
-  <circle cx="100" cy="100" r="60" fill="#00ff88" opacity="0.15"/>
-  <circle cx="100" cy="100" r="45" fill="#1a1a2e"/>
-  <text x="100" y="118" font-family="Arial, sans-serif" font-size="48" fill="#00ff88" text-anchor="middle" font-weight="bold">₭</text>
+  <!-- Background -->
+  <rect width="600" height="200" fill="url(#bgGrad)"/>
 
-  <!-- RAW Symbol Circle -->
-  <circle cx="500" cy="100" r="60" fill="#00ff88" opacity="0.15"/>
-  <circle cx="500" cy="100" r="45" fill="#1a1a2e"/>
-  <text x="500" y="118" font-family="Arial, sans-serif" font-size="48" fill="#00ff88" text-anchor="middle" font-weight="bold">⋖</text>
+  <!-- Left: Banknote with KNEX -->
+  <g transform="translate(70, 60)">
+    <!-- Banknote shape -->
+    <rect x="0" y="0" width="120" height="80" rx="6" fill="#1a2744" stroke="#00ff88" stroke-width="2"/>
+    <rect x="4" y="4" width="112" height="72" rx="4" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.5"/>
+    <rect x="0" y="0" width="120" height="80" rx="6" fill="url(#notePattern)"/>
 
-  <!-- Title -->
-  <text x="300" y="85" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">KnexCoin Currency</text>
-  <text x="300" y="120" font-family="Arial, sans-serif" font-size="18" fill="#00ff88" text-anchor="middle">Type ₭ and ⋖ anywhere on macOS</text>
-  <text x="300" y="150" font-family="Arial, sans-serif" font-size="14" fill="#888888" text-anchor="middle">1 ₭ = 10,000,000 ⋖</text>
+    <!-- Corner denominations -->
+    <text x="12" y="18" font-family="monospace" font-size="10" fill="#00ff88" opacity="0.8">1</text>
+    <text x="108" y="18" font-family="monospace" font-size="10" fill="#00ff88" opacity="0.8" text-anchor="end">1</text>
+    <text x="12" y="74" font-family="monospace" font-size="10" fill="#00ff88" opacity="0.8">1</text>
+    <text x="108" y="74" font-family="monospace" font-size="10" fill="#00ff88" opacity="0.8" text-anchor="end">1</text>
+
+    <!-- Center KNEX symbol -->
+    <circle cx="60" cy="40" r="22" fill="#162447" stroke="#00ff88" stroke-width="1.5"/>
+    <text x="60" y="48" font-family="Arial, sans-serif" font-size="28" fill="#00ff88" text-anchor="middle" font-weight="bold" filter="url(#glow)">₭</text>
+  </g>
+
+  <!-- Right: RAW coin -->
+  <g transform="translate(470, 100)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="50" fill="#1a2744" stroke="#00ff88" stroke-width="2"/>
+    <circle cx="0" cy="0" r="44" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.5"/>
+    <circle cx="0" cy="0" r="38" fill="#162447" stroke="#00ff88" stroke-width="1"/>
+
+    <!-- RAW symbol - custom chevron with stubs, properly centered -->
+    <g fill="none" stroke="#00ff88" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+      <!-- Chevron pointing left -->
+      <path d="M12 -12 L-12 0 L12 12"/>
+      <!-- Top stub -->
+      <path d="M0 -20 L0 -10"/>
+      <!-- Bottom stub -->
+      <path d="M0 10 L0 20"/>
+    </g>
+  </g>
+
+  <!-- Center text -->
+  <g transform="translate(300, 0)">
+    <text x="0" y="75" font-family="Arial, sans-serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">KnexCoin Currency</text>
+    <text x="0" y="105" font-family="Arial, sans-serif" font-size="15" fill="#00ff88" text-anchor="middle">Type ₭ and ⋖ anywhere</text>
+    <text x="0" y="130" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">macOS • Windows • Linux</text>
+    <text x="0" y="155" font-family="monospace" font-size="11" fill="#00ff88" text-anchor="middle" opacity="0.7">1 ₭ = 10,000,000 ⋖</text>
+  </g>
 </svg>
