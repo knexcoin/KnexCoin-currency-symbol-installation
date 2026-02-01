@@ -204,6 +204,55 @@ Like **¢** (cent).
 ╚═══════════════════════════════════════════════════════════╝
 ```
 
+### Maximum Supply (Hard Cap)
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║                    TOTAL SUPPLY CAP                       ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  Maximum RAW ever created:                                ║
+║                                                           ║
+║         ⋖ 2,100,000,000,000,000                           ║
+║           (2.1 Quadrillion RAW)                           ║
+║                                                           ║
+║  Equivalent in KNEX:                                      ║
+║                                                           ║
+║         ₭ 210,000,000                                     ║
+║           (210 Million KNEX)                              ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+**Why 2.1 Quadrillion RAW?**
+
+| Unit | Amount | Calculation |
+|------|--------|-------------|
+| **Total RAW** | ⋖ 2,100,000,000,000,000 | 2.1 × 10¹⁵ (hard cap) |
+| **Total KNEX** | ₭ 210,000,000 | 2.1 quadrillion ÷ 10 million |
+| **RAW per KNEX** | ⋖ 10,000,000 | Fixed conversion rate |
+
+**Supply Breakdown:**
+
+| Metric | Value |
+|--------|-------|
+| Maximum KNEX | ₭ 210,000,000 |
+| Maximum RAW | ⋖ 2,100,000,000,000,000 |
+| Smallest unit | ⋖ 1 (one RAW) |
+| Decimal places | 7 (in KNEX) |
+| Scientific notation | 2.1 × 10¹⁵ RAW |
+
+**Comparison to Other Cryptocurrencies:**
+
+| Cryptocurrency | Max Supply (Main Unit) | Max Supply (Smallest Unit) | Smallest Unit Name |
+|----------------|------------------------|---------------------------|-------------------|
+| **KnexCoin** | ₭ 210,000,000 | ⋖ 2.1 Quadrillion | RAW |
+| Bitcoin | 21,000,000 BTC | 2.1 Quadrillion satoshis | Satoshi |
+| Ethereum | No hard cap | No hard cap | Wei |
+| Litecoin | 84,000,000 LTC | 8.4 Quadrillion litoshis | Litoshi |
+
+> **Note:** KnexCoin's 2.1 quadrillion RAW mirrors Bitcoin's 2.1 quadrillion satoshis, making it familiar to crypto users while providing the same level of divisibility for micro-transactions.
+
 ### Symbol Reference
 
 | Symbol | Name | Unicode | Shortcut | Equivalent |
