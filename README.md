@@ -5,7 +5,9 @@
 </p>
 
 <p align="center">
-  <strong>Type ₭ (KNEX) and ⋖ (RAW) currency symbols anywhere on your Mac!</strong>
+  <strong>Type ₭ (KNEX) and ⋖ (RAW) currency symbols anywhere!</strong>
+  <br/>
+  <em>macOS • Windows • Linux</em>
 </p>
 
 <p align="center">
@@ -46,18 +48,44 @@ Tip:     ⋖ 500000 →  500K RAW = ₭ 0.05
 
 ## 🚀 Quick Install
 
-### One-Line Install (Recommended)
+### macOS
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/knexcoin/KnexCoin-currency-symbol-installation/main/install.sh | bash
 ```
 
-### Manual Install
+### Windows
+
+```powershell
+# Download and run in PowerShell (as Administrator)
+irm https://raw.githubusercontent.com/knexcoin/KnexCoin-currency-symbol-installation/main/install.ps1 | iex
+```
+
+Or manually:
+1. Download the repository
+2. Right-click `install.ps1` → "Run with PowerShell"
+3. Install [AutoHotkey](https://www.autohotkey.com/download/) if prompted
+
+### Linux
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/knexcoin/KnexCoin-currency-symbol-installation/main/install-linux.sh | bash
+```
+
+### Manual Install (All Platforms)
 
 ```bash
 git clone https://github.com/knexcoin/KnexCoin-currency-symbol-installation.git
 cd KnexCoin-currency-symbol-installation
+
+# macOS
 bash install.sh
+
+# Linux
+bash install-linux.sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy Bypass -File install.ps1
 ```
 
 ---
@@ -65,6 +93,8 @@ bash install.sh
 ## ⌨️ Keyboard Shortcuts
 
 Once installed, use these shortcuts anywhere:
+
+### macOS
 
 | Shortcut | Output | Description |
 |----------|--------|-------------|
@@ -75,7 +105,31 @@ Once installed, use these shortcuts anywhere:
 | **⌥⌃K** | — | Copy KNEX to clipboard |
 | **⌥⌃R** | — | Copy RAW to clipboard |
 
-> **Legend:** ⌥ = Option/Alt, ⇧ = Shift, ⌃ = Control
+> **Legend:** ⌥ = Option, ⇧ = Shift, ⌃ = Control
+
+### Windows
+
+| Shortcut | Output | Description |
+|----------|--------|-------------|
+| **Alt+K** | `₭ ` | KNEX symbol + space |
+| **Alt+Shift+K** | `₭` | KNEX symbol (no space) |
+| **Alt+R** | `⋖ ` | RAW symbol + space |
+| **Alt+Shift+R** | `⋖` | RAW symbol (no space) |
+| **Alt+Ctrl+K** | — | Copy KNEX to clipboard |
+| **Alt+Ctrl+R** | — | Copy RAW to clipboard |
+
+> Requires [AutoHotkey](https://www.autohotkey.com/) (installed automatically)
+
+### Linux
+
+| Method | Sequence | Output |
+|--------|----------|--------|
+| **XCompose** | Compose → k → k | `₭` |
+| **XCompose** | Compose → r → r | `⋖` |
+| **Custom** | Super+K | `₭ ` |
+| **Custom** | Super+R | `⋖ ` |
+
+> Set your Compose key in System Settings → Keyboard. Custom shortcuts require `xdotool`.
 
 ---
 
@@ -97,9 +151,20 @@ Once installed, use these shortcuts anywhere:
 
 ## 📋 Requirements
 
-- **macOS** 10.15 (Catalina) or later
-- **Homebrew** (will be installed if missing)
-- **Hammerspoon** (installed automatically)
+### macOS
+- macOS 10.15 (Catalina) or later
+- Homebrew (installed automatically)
+- Hammerspoon (installed automatically)
+
+### Windows
+- Windows 10 or later
+- [AutoHotkey](https://www.autohotkey.com/) v1.1+ or v2 (prompted to install)
+- PowerShell 5.0+
+
+### Linux
+- Any modern Linux distribution
+- X11 or Wayland (XCompose for X11)
+- Optional: `xdotool`, `xclip` for hotkey scripts
 
 ---
 
@@ -313,8 +378,11 @@ fontforge -script build-font.py
 KnexCoin-currency-symbol-installation/
 ├── README.md                 # This documentation
 ├── LICENSE                   # MIT License
-├── install.sh                # One-click installer
-├── uninstall.sh              # Clean removal script
+│
+├── install.sh                # macOS installer
+├── install.ps1               # Windows installer (PowerShell)
+├── install-linux.sh          # Linux installer
+├── uninstall.sh              # macOS uninstaller
 │
 ├── KnexSymbol.ttf            # TrueType font
 ├── KnexSymbol.woff2          # Web font
@@ -325,8 +393,8 @@ KnexCoin-currency-symbol-installation/
 ├── RawSymbol-original.svg    # RAW symbol source (256x256)
 ├── RawSymbol-glyph.svg       # Font-ready RAW glyph (1000 UPM)
 │
-├── knex-hammerspoon.lua      # Hammerspoon hotkey config
-├── karabiner-knex.json       # Karabiner complex modification
+├── knex-hammerspoon.lua      # macOS Hammerspoon hotkey config
+├── karabiner-knex.json       # macOS Karabiner complex modification
 └── build-font.py             # FontForge build script
 ```
 
