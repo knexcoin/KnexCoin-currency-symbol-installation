@@ -27,12 +27,65 @@
 - **KnexWallet** - Mobile or desktop wallet app
 - **Knex Crypto Card** - Physical NFC card with NTAG 424 DNA technology
 
+```
+╔═══════════════════════════════════════════════════════════╗
+║                    AIRDROP REWARDS                        ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  INSTALLATION BONUS:           ₭ 1,000                    ║
+║  ─────────────────────────────────────────────────────    ║
+║  Install this keyboard integration and register your      ║
+║  wallet to receive 1,000 KNEX instantly!                  ║
+║                                                           ║
+║  SOCIAL MEDIA SHARES:          ₭ 1 per share              ║
+║  ─────────────────────────────────────────────────────    ║
+║  Share on Twitter, Facebook, Reddit, etc.                 ║
+║  Earn UNLIMITED KNEX - no cap per account!                ║
+║                                                           ║
+║  TOTAL AIRDROP POOL:           ₭ 1,000,000                ║
+║  ─────────────────────────────────────────────────────    ║
+║  Runs indefinitely until 1 Million KNEX distributed       ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+### Reward Structure
+
+| Action | Reward | Limit |
+|--------|--------|-------|
+| **Install keyboard integration** | ₭ 1,000 | Once per wallet |
+| **Share on social media** | ₭ 1 per share | Unlimited |
+| **Referral bonus** | ₭ 100 per referral | Unlimited |
+
+### Airdrop Details
+
+| Metric | Value |
+|--------|-------|
+| **Total Airdrop Pool** | ₭ 1,000,000 (1 Million KNEX) |
+| **Installation Bonus** | ₭ 1,000 per user |
+| **Social Share Reward** | ₭ 1 per verified share |
+| **Duration** | Runs indefinitely until pool exhausted |
+| **Eligibility** | One wallet per person |
+
 ### How to Earn
 
-1. Install the currency symbol integration (this repo)
-2. Register your wallet at [knexcoin.org/rewards](https://knexcoin.org/rewards)
-3. Receive ₭ 0.10 welcome bonus
-4. Earn more through community participation, referrals, and validator staking
+1. **Install** the currency symbol integration (this repo)
+2. **Register** your wallet at [knexcoin.org/airdrop](https://knexcoin.org/airdrop)
+3. **Receive** ₭ 1,000 installation bonus instantly
+4. **Share** on social media to earn ₭ 1 per verified share (unlimited)
+5. **Refer** friends using your unique link for ₭ 100 per signup
+
+### Supported Social Platforms
+
+- Twitter/X
+- Facebook
+- Reddit
+- LinkedIn
+- Discord
+- Telegram
+- Instagram
+- YouTube
+- TikTok
 
 ---
 
