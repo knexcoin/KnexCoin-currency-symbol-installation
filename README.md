@@ -12,10 +12,10 @@
 
 <p align="center">
   <a href="#-earn-free-knexcoin">Earn Free ₭</a> •
-  <a href="#-knex-crypto-card-ntag-424-dna">Crypto Card</a> •
+  <a href="#-fee-less-transactions">Fee-Less</a> •
+  <a href="#-quantum-proof-from-day-one">Quantum-Proof</a> •
   <a href="#-quick-install">Quick Install</a> •
-  <a href="#-keyboard-shortcuts">Shortcuts</a> •
-  <a href="#-troubleshooting">Troubleshooting</a>
+  <a href="#-keyboard-shortcuts">Shortcuts</a>
 </p>
 
 ---
@@ -795,6 +795,141 @@ KnexCoin-currency-symbol-installation/
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+---
+
+## 💸 Fee-Less Transactions
+
+KnexCoin offers **zero transaction fees** for standard transfers. This is made possible through **Proof-of-Bandwidth (PoB)** consensus, which replaces traditional fee economics with bandwidth subsidization.
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║                    TRANSACTION FEES                       ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  STANDARD TRANSFERS:           ₭ 0 (FREE)                 ║
+║  ─────────────────────────────────────────────────────    ║
+║  Send KNEX to any wallet with zero fees.                  ║
+║  Microtransactions and IoT payments now viable!           ║
+║                                                           ║
+║  SMART CONTRACT EXECUTION:     Minimal fee                ║
+║  ─────────────────────────────────────────────────────    ║
+║  Smart contracts require small computational fees         ║
+║  to prevent network spam and abuse.                       ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+### Fee Comparison
+
+| Network | Transfer Fee | Confirmation Time |
+|---------|-------------|-------------------|
+| **KnexCoin** | **₭ 0 (Free)** | **< 1 second** |
+| Bitcoin | $1-50+ | ~60 minutes |
+| Ethereum | $0.50-100+ | ~15 minutes |
+| Solana | ~$0.00025 | ~400ms |
+| Nano | $0 | ~0.2 seconds |
+
+### Why Fee-Less?
+
+- **Bandwidth-Backed:** Network value tied to real infrastructure, not transaction fees
+- **Proof-of-Bandwidth:** Validators earn rewards through bandwidth contribution, not fees
+- **Microtransaction Ready:** Send 1⋖ (0.0000001 KNEX) without losing value to fees
+- **IoT Compatible:** Machine-to-machine payments become economically viable
+
+> **Note:** Smart contract execution requires minimal fees to prevent spam. Standard wallet-to-wallet transfers are always free.
+
+---
+
+## 🔐 Quantum-Proof From Day One
+
+KnexCoin is the **first DAG ledger** built with **NIST-standardized post-quantum cryptography** from Genesis. No migration needed—your assets are protected against quantum attacks from the moment you create your wallet.
+
+```
+╔═══════════════════════════════════════════════════════════╗
+║              QUANTUM-PROOF SECURITY                       ║
+╠═══════════════════════════════════════════════════════════╣
+║                                                           ║
+║  All KnexCoin addresses begin with: knexq1                ║
+║  The "q" indicates quantum-safe cryptography              ║
+║                                                           ║
+║  Your funds are protected against:                        ║
+║  • Harvest-now-decrypt-later attacks                      ║
+║  • Future quantum computer threats                        ║
+║  • Shor's algorithm (breaks ECDSA/RSA)                    ║
+║  • Grover's algorithm (weakens hashing)                   ║
+║                                                           ║
+╚═══════════════════════════════════════════════════════════╝
+```
+
+### Post-Quantum Cryptography Algorithms
+
+KnexCoin implements **four NIST-standardized** post-quantum algorithms:
+
+| Algorithm | NIST Standard | Purpose | Details |
+|-----------|---------------|---------|---------|
+| **FN-DSA-512** | FIPS 206 (FALCON) | Primary Signatures | Lattice-based signatures with smallest post-quantum footprint. 897-byte public keys, 666-byte signatures. |
+| **ML-KEM-768** | FIPS 203 (Kyber) | Key Encapsulation | Quantum-safe key exchange for encrypted node-to-node communication across the network. |
+| **ML-DSA-65** | FIPS 204 (Dilithium) | Backup Signatures | Governance-switchable fallback using different lattice structure for defense in depth. |
+| **SHA3-256** | FIPS 202 | Hashing | Quantum-resistant hashing for addresses and Merkle trees. Unaffected by Grover's algorithm. |
+
+### Algorithm Deep Dive
+
+#### FN-DSA-512 (FALCON) - Primary Signatures
+- **Type:** Lattice-based (NTRU lattices)
+- **Security Level:** NIST Level I (128-bit quantum security)
+- **Public Key Size:** 897 bytes
+- **Signature Size:** 666 bytes
+- **Why FALCON?** Smallest signature size of all PQ signature schemes, ideal for blockchain
+
+#### ML-KEM-768 (Kyber) - Key Encapsulation
+- **Type:** Module Learning with Errors (MLWE)
+- **Security Level:** NIST Level III (192-bit quantum security)
+- **Public Key Size:** 1,184 bytes
+- **Ciphertext Size:** 1,088 bytes
+- **Why Kyber?** Fastest encapsulation/decapsulation, proven secure
+
+#### ML-DSA-65 (Dilithium) - Backup Signatures
+- **Type:** Module Learning with Errors (MLWE)
+- **Security Level:** NIST Level III (192-bit quantum security)
+- **Public Key Size:** 1,952 bytes
+- **Signature Size:** 3,293 bytes
+- **Why Dilithium?** Different mathematical structure than FALCON for redundancy
+
+#### SHA3-256 - Quantum-Resistant Hashing
+- **Type:** Keccak sponge construction
+- **Output Size:** 256 bits
+- **Quantum Security:** 128-bit (Grover reduces to √N)
+- **Why SHA3?** Purpose-built, not MD/SHA legacy, resistant to length extension
+
+### Quantum Threat Timeline
+
+| Year | Event |
+|------|-------|
+| **2024** | NIST finalizes FIPS 203, 204, 205 standards |
+| **2025** | FALCON (FIPS 206) + HQC standardized |
+| **2026** | **KnexCoin launches quantum-proof from Genesis** |
+| **2030+** | Cryptographically-relevant quantum computers expected |
+
+### Why Quantum-Proof Matters Now
+
+| Network | Cryptography | Quantum Status |
+|---------|-------------|----------------|
+| Bitcoin | ECDSA (secp256k1) | ❌ **Vulnerable** |
+| Ethereum | ECDSA (secp256k1) | ❌ **Vulnerable** |
+| Solana | Ed25519 | ❌ **Vulnerable** |
+| **KnexCoin** | FN-DSA + ML-KEM | ✅ **Quantum-Proof** |
+
+> **Harvest Now, Decrypt Later:** Attackers can record encrypted transactions today and decrypt them when quantum computers become available. KnexCoin protects against this threat from day one.
+
+### NIST FIPS Certification
+
+All cryptographic algorithms used in KnexCoin are **NIST FIPS certified**:
+
+- **FIPS 202:** SHA-3 Standard
+- **FIPS 203:** ML-KEM (Kyber) Key Encapsulation
+- **FIPS 204:** ML-DSA (Dilithium) Digital Signatures
+- **FIPS 206:** FN-DSA (FALCON) Digital Signatures
 
 ---
 
