@@ -1,4 +1,4 @@
-# ₭ Special KnexCoin Currency Integration
+# Special ₭ Symbol KnexCoin Currency Integration
 
 <p align="center">
   <img src="assets/knex-banner.svg" alt="KnexCoin Currency Symbols" width="600"/>
