@@ -11,11 +11,149 @@
 </p>
 
 <p align="center">
+  <a href="#-earn-free-knexcoin">Earn Free ₭</a> •
+  <a href="#-knex-crypto-card-ntag-424-dna">Crypto Card</a> •
   <a href="#-quick-install">Quick Install</a> •
   <a href="#-keyboard-shortcuts">Shortcuts</a> •
-  <a href="#-currency-system">Currency System</a> •
   <a href="#-troubleshooting">Troubleshooting</a>
 </p>
+
+---
+
+## 🎁 Earn Free KnexCoin
+
+**Installing this keyboard integration is one way to earn free KnexCoin!** Rewards are delivered directly to your:
+
+- **KnexWallet** - Mobile or desktop wallet app
+- **Knex Crypto Card** - Physical NFC card with NTAG 424 DNA technology
+
+### How to Earn
+
+1. Install the currency symbol integration (this repo)
+2. Register your wallet at [knexcoin.org/rewards](https://knexcoin.org/rewards)
+3. Receive ₭ 0.10 welcome bonus
+4. Earn more through community participation, referrals, and validator staking
+
+---
+
+## 💳 Knex Crypto Card (NTAG 424 DNA)
+
+The **Knex Crypto Card** is a physical payment card powered by **NXP NTAG 424 DNA** - the most secure NFC chip available for consumer applications.
+
+### What is NTAG 424 DNA?
+
+NTAG 424 DNA (Secure Dynamic Messaging) is NXP's advanced NFC chip featuring cryptographic authentication that makes each tap **mathematically unforgeable**.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    KNEX CRYPTO CARD                             │
+│                                                                 │
+│    ┌──────────┐                                                 │
+│    │  ₭ NFC   │    Powered by NTAG 424 DNA                     │
+│    │  CHIP    │    AES-128 Encryption                          │
+│    └──────────┘    SUN Authentication                          │
+│                                                                 │
+│    Card Number: **** **** **** 4242                            │
+│    Wallet: knex1qxy2...                                        │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Technical Specifications
+
+| Feature | NTAG 424 DNA Spec |
+|---------|-------------------|
+| **Encryption** | AES-128 bit |
+| **Authentication** | SUN (Secure Unique NFC) |
+| **Memory** | 416 bytes user memory |
+| **UID** | 7-byte unique identifier |
+| **Communication** | ISO/IEC 14443-3A |
+| **Read Range** | Up to 50mm |
+| **Data Retention** | 10 years |
+| **Write Endurance** | 1,000,000 cycles |
+| **Operating Temp** | -25°C to +85°C |
+
+### Security Features
+
+| Feature | Description |
+|---------|-------------|
+| **SUN Message (SDM)** | Each tap generates a unique, encrypted URL with rolling counter |
+| **AES-128 CMAC** | Cryptographic signature verifies authenticity |
+| **Rolling Counter** | Prevents replay attacks - same tap never works twice |
+| **UID Mirroring** | Card's unique ID embedded in every transaction |
+| **Tamper Detection** | Chip detects physical tampering attempts |
+
+### How SUN Authentication Works
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    TAP → VERIFY → TRANSACT                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  1. TAP     Card generates unique encrypted message             │
+│             ┌─────────────────────────────────────────┐         │
+│             │ https://pay.knex/v?                     │         │
+│             │   uid=04A23F...                         │         │
+│             │   ctr=000042                            │         │
+│             │   cmac=8F3D2A1B...                      │         │
+│             └─────────────────────────────────────────┘         │
+│                                                                 │
+│  2. VERIFY  Server validates CMAC signature with shared key     │
+│             - Decrypts message with AES-128                     │
+│             - Verifies counter is higher than last seen         │
+│             - Confirms UID matches registered card              │
+│                                                                 │
+│  3. TRANSACT  If valid, transaction proceeds                    │
+│             - Funds deducted from linked wallet                 │
+│             - Receipt sent to card owner                        │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Comparison: Knex Card vs Other Crypto Cards
+
+| Feature | Knex Card (NTAG 424 DNA) | Standard NFC Cards | Magnetic Stripe | QR Code |
+|---------|--------------------------|-------------------|-----------------|---------|
+| **Forgery Resistance** | Unforgeable | Clonable | Easily skimmed | Screenshot-able |
+| **Replay Attack Protection** | Rolling counter | None | None | None |
+| **Encryption** | AES-128 | Often none | None | None |
+| **Offline Verification** | Partial | No | No | No |
+| **Unique Per-Tap** | Yes (SDM) | No | No | No |
+| **Physical Durability** | No battery, 10yr life | Varies | Wears out | N/A |
+| **Speed** | <100ms tap | ~500ms | ~2s swipe | Camera dependent |
+| **Privacy** | UID not broadcast | Often broadcasts | Track exposed | Public |
+
+### Why NTAG 424 DNA is Unforgeable
+
+1. **Symmetric Key Never Leaves Chip** - The AES key is burned into the chip during manufacturing and cannot be extracted
+2. **Rolling Counter** - Each tap increments an internal counter; old values are rejected
+3. **Cryptographic Proof** - The CMAC signature proves the message came from the genuine chip
+4. **No Cloning Possible** - Without the secret key, attackers cannot generate valid signatures
+
+### Pros and Cons
+
+#### Pros
+- **Mathematically unforgeable** - Secured by AES-128 cryptography
+- **No battery required** - Powered by NFC field from reader
+- **Instant transactions** - Tap and go in under 100ms
+- **Works offline** - Card generates valid signatures without internet
+- **10+ year lifespan** - No moving parts, no battery to die
+- **Water resistant** - Works through most card materials
+- **Privacy preserving** - No personal data stored on chip
+
+#### Cons
+- **Requires NFC reader** - Not all POS terminals support NFC
+- **One-way authentication** - Card proves itself to server, not vice versa
+- **Limited storage** - Only 416 bytes (sufficient for crypto, not for full wallet)
+- **Initial cost** - NTAG 424 DNA chips cost more than basic NFC tags
+- **Key management** - Lost card requires re-provisioning with new keys
+
+### Get Your Knex Card
+
+Order at [knexcoin.org/card](https://knexcoin.org/card)
+
+- **Standard Card:** ₭ 5.00 (plastic, white)
+- **Metal Card:** ₭ 25.00 (stainless steel, black)
+- **Custom Card:** ₭ 15.00 (your design)
 
 ---
 
