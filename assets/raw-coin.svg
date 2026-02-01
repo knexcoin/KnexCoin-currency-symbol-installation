@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-label="RAW Coin - less-than with dot">
+  <!-- Black circle -->
+  <circle cx="128" cy="128" r="118" fill="#000000"/>
+
+  <!-- ⋖ Symbol - chevron with dot -->
+  <g fill="none" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Chevron < pointing left -->
+    <path d="M196 88 L60 128 L196 168"/>
+  </g>
+
+  <!-- Dot: slightly right of center -->
+  <circle cx="142" cy="128" r="10" fill="#ffffff"/>
+</svg>
