@@ -71,15 +71,26 @@
     <circle cx="70" cy="50" r="28" fill="#0a0f1a" stroke="#00ff88" stroke-width="2"/>
     <circle cx="70" cy="50" r="22" fill="none" stroke="#00ff88" stroke-width="0.5" opacity="0.5"/>
 
-    <!-- ₭ Symbol centered -->
-    <text x="70" y="59" font-family="Arial, sans-serif" font-size="32" fill="#00ff88" text-anchor="middle" font-weight="bold" filter="url(#glow)">₭</text>
+    <!-- ₭ Symbol - EXACT design from user's SVG, scaled to fit -->
+    <!-- Original viewBox 0 0 256 256, center at 128,128 -->
+    <!-- Scale: 0.14 to fit in r=22 medallion, translate to center at 70,50 -->
+    <g transform="translate(70, 50) scale(0.14) translate(-128, -128)" fill="#00ff88" filter="url(#glow)">
+      <!-- Stem -->
+      <rect x="108" y="56" width="24" height="144"/>
+      <!-- Left stub -->
+      <rect x="84" y="116" width="24" height="24"/>
+      <!-- Upper-right arm (45°) -->
+      <polygon points="136.485,137.515 182.485,91.515 165.515,74.545 119.515,120.545"/>
+      <!-- Lower-right arm -->
+      <polygon points="119.515,135.455 165.515,181.455 182.485,168.485 136.485,118.485"/>
+    </g>
 
-    <!-- "KNEX" label below -->
+    <!-- "KNEXCOIN" label below -->
     <text x="70" y="95" font-family="monospace" font-size="7" fill="#00ff88" text-anchor="middle" letter-spacing="2" opacity="0.7">KNEXCOIN</text>
   </g>
 
   <!-- ═══════════════════════════════════════════════════════════ -->
-  <!-- RIGHT: ⋖ RAW COIN (using your exact SVG design)            -->
+  <!-- RIGHT: ⋖ RAW COIN (less-than with dot)                      -->
   <!-- ═══════════════════════════════════════════════════════════ -->
   <g transform="translate(480, 100)">
     <!-- Outer coin ring -->
@@ -91,18 +102,16 @@
     <!-- Center disc -->
     <circle cx="0" cy="0" r="36" fill="#0a0f1a" stroke="#00ff88" stroke-width="1.5"/>
 
-    <!-- RAW Symbol - exact design from RawSymbol-original.svg -->
-    <!-- Scaled and centered: original was 256x256, center at 128,128 -->
-    <!-- Scale factor: ~0.18 to fit in r=36 circle -->
-    <g transform="scale(0.18) translate(-128, -128)"
-       fill="none" stroke="#00ff88" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
-      <!-- Chevron < pointing left -->
-      <path d="M196 88 L60 128"/>
-      <path d="M60 128 L196 168"/>
-      <!-- Top vertical stub -->
-      <path d="M128 64 L128 104"/>
-      <!-- Bottom vertical stub -->
-      <path d="M128 152 L128 192"/>
+    <!-- ⋖ Symbol - EXACT design from user's SVG (less-than with dot) -->
+    <!-- Original viewBox 0 0 256 256, center at 128,128 -->
+    <!-- Scale: 0.18 to fit in r=36 coin -->
+    <g transform="scale(0.18) translate(-128, -128)" filter="url(#glow)">
+      <!-- "<" chevron -->
+      <g fill="none" stroke="#00ff88" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M196 88 L60 128 L196 168"/>
+      </g>
+      <!-- dot: slightly right of center -->
+      <circle cx="142" cy="128" r="10" fill="#00ff88"/>
     </g>
 
     <!-- "RAW" label -->
