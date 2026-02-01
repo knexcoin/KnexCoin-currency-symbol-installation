@@ -947,10 +947,34 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
+## 👨‍💻 Developed By
+
+**KnexCoin** is a project developed by **davidotero**
+
 <p align="center">
-  Made with 💚 for the KnexCoin community
+  <strong>Distributed Ledger Technologies (DLT)</strong>
+  <br/>
+  <a href="https://www.distributedledgertechnologies.com">www.distributedledgertechnologies.com</a>
+</p>
+
+### Contact
+
+| Channel | Contact |
+|---------|---------|
+| **Company Email** | [contact@distributedledgertechnologies.com](mailto:contact@distributedledgertechnologies.com) |
+| **Developer Email** | [david@knexmail.com](mailto:david@knexmail.com) |
+| **GitHub** | [github.com/knexcoin](https://github.com/knexcoin) |
+
+---
+
+<p align="center">
+  Made with 💚 by <strong>davidotero</strong> for the KnexCoin community
 </p>
 
 <p align="center">
   <strong>1 ₭ = 10,000,000⋖</strong>
+</p>
+
+<p align="center">
+  <em>© 2026 Distributed Ledger Technologies (DLT)</em>
 </p>
