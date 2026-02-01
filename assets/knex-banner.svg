@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200">
+  <!-- Background -->
+  <rect width="600" height="200" fill="#1a1a2e"/>
+
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#16213e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f3460;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="200" fill="url(#grad)"/>
+
+  <!-- KNEX Symbol Circle -->
+  <circle cx="100" cy="100" r="60" fill="#00ff88" opacity="0.15"/>
+  <circle cx="100" cy="100" r="45" fill="#1a1a2e"/>
+  <text x="100" y="118" font-family="Arial, sans-serif" font-size="48" fill="#00ff88" text-anchor="middle" font-weight="bold">₭</text>
+
+  <!-- RAW Symbol Circle -->
+  <circle cx="500" cy="100" r="60" fill="#00ff88" opacity="0.15"/>
+  <circle cx="500" cy="100" r="45" fill="#1a1a2e"/>
+  <text x="500" y="118" font-family="Arial, sans-serif" font-size="48" fill="#00ff88" text-anchor="middle" font-weight="bold">⋖</text>
+
+  <!-- Title -->
+  <text x="300" y="85" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">KnexCoin Currency</text>
+  <text x="300" y="120" font-family="Arial, sans-serif" font-size="18" fill="#00ff88" text-anchor="middle">Type ₭ and ⋖ anywhere on macOS</text>
+  <text x="300" y="150" font-family="Arial, sans-serif" font-size="14" fill="#888888" text-anchor="middle">1 ₭ = 10,000,000 ⋖</text>
+</svg>

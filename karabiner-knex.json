@@ -1,0 +1,52 @@
+{
+  "title": "KNEX Symbol Press-and-Hold",
+  "rules": [
+    {
+      "description": "Hold K to show KNEX symbol chooser (via Hammerspoon)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to_if_held_down": [
+            {
+              "shell_command": "/usr/local/bin/hs -c 'showKnexChooser()'"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "k"
+            }
+          ],
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 300
+          }
+        }
+      ]
+    },
+    {
+      "description": "Option+K immediately types KNEX symbol (U+E000)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": ["option"],
+              "optional": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell application \"System Events\" to keystroke (character id 57344)'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

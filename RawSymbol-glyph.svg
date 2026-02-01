@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- RAW Symbol - Font Glyph (1000 UPM) -->
+  <!-- Chevron < with vertical bar stubs through center -->
+  <!-- Strokes converted to filled paths for font compatibility -->
+
+  <g fill="black">
+    <!-- Upper chevron arm: from right-top to center-left -->
+    <!-- Original: M196 88 L60 128, stroke-width 22, scaled 3.90625x and 0.8 = 3.125x -->
+    <polygon points="
+      612.5,206.25
+      612.5,343.75
+      187.5,443.75
+      187.5,556.25
+      612.5,656.25
+      612.5,793.75
+      118.75,500
+    "/>
+
+    <!-- Upper vertical stub -->
+    <rect x="365.625" y="131.25" width="68.75" height="156.25" rx="34.375"/>
+
+    <!-- Lower vertical stub -->
+    <rect x="365.625" y="712.5" width="68.75" height="156.25" rx="34.375"/>
+  </g>
+</svg>

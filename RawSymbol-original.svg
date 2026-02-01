@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="1000" height="1000" aria-label="cents symbol in black circle (centered, 80%)">
+  <!-- black circle, transparent outside -->
+  <circle cx="128" cy="128" r="118" fill="#000000"/>
+
+  <!-- symbol scaled to 80% around the center (128,128) -->
+  <g transform="translate(128,128) scale(0.8) translate(-128,-128)"
+     fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <!-- balanced "<" -->
+    <path d="M196 88 L60 128"/>
+    <path d="M60 128 L196 168"/>
+
+    <!-- centered vertical stubs -->
+    <path d="M128 64 L128 104"/>
+    <path d="M128 152 L128 192"/>
+  </g>
+</svg>

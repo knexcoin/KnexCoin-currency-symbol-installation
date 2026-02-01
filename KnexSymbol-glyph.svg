@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- KNEX Currency Symbol - FontForge Compatible (scaled from 256 to 1000 UPM) -->
+  <!-- Original viewBox 256 scaled 3.90625x to 1000 -->
+
+  <g fill="black">
+    <!-- Stem -->
+    <rect x="421.875" y="218.75" width="93.75" height="562.5" />
+
+    <!-- Left stub -->
+    <rect x="328.125" y="453.125" width="93.75" height="93.75" />
+
+    <!-- Upper-right arm (45deg) -->
+    <polygon points="
+      533.144,537.168
+      713.144,357.168
+      646.856,291.128
+      466.856,471.128
+    "/>
+
+    <!-- Lower-right arm (mirrored) -->
+    <polygon points="
+      466.856,529.121
+      646.856,709.121
+      713.144,658.144
+      533.144,462.831
+    "/>
+  </g>
+</svg>
